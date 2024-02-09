@@ -6,33 +6,29 @@
   display: none;
   max-width: 100%;
 }
-.div2 {
-  position: relative;
-  font-weight: 500;
-  color: #ffc178;
-  z-index: 1;
-}
-.div3 {
-  height: 30px;
-  display: inline-block;
-}
+
+.div2,
 .div3,
-.div4 {
-  position: relative;
-  font-weight: 500;
-  z-index: 1;
-}
-.div5 {
-  height: 30px;
-  display: inline-block;
-}
+.div4,
 .div5,
 .div6 {
   position: relative;
   font-weight: 500;
-  white-space: nowrap;
   z-index: 1;
+  transition: all 0.3s ease-in-out; /* Добавлено для плавности */
 }
+
+/* Изменение цвета при наведении */
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover {
+  range: auto;
+  background-color: orange; 
+}
+
+
 .parent {
   align-self: stretch;
   display: flex;
@@ -531,9 +527,12 @@
   right: -178px;
   bottom: -63px;
   line-height: 120%;
+  white-space: pre-wrap;
   font-weight: 300;
   display: inline-block;
   z-index: 1;
+  
+  
 }
 .frame-l-v-c-corner,
 .proper-typeface,
